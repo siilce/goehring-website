@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="de" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0E0F11">
+  <!-- Progressive Enhancement: markiert JS-Verfügbarkeit, bevor das CSS greift
+       (verhindert „Flash" und hält Inhalte ohne JS sichtbar) -->
+  <script>document.documentElement.classList.replace('no-js','js');</script>
+
+  <title>Auto-Lackiererei Göhring · Meisterbetrieb für Lackierung & Karosserie in Arnstadt</title>
+  <meta name="description"
+        content="Lackier-Meisterbetrieb in Arnstadt: Fahrzeuglackierung, Unfall- und Karosserieinstandsetzung, Smart Repair. Sorglos-Service mit Versicherungsabwicklung. 4,8★ aus 32 Bewertungen.">
+  <link rel="canonical" href="https://www.lack-goehring.de/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:site_name" content="Auto-Lackiererei Göhring">
+  <meta property="og:title" content="Auto-Lackiererei Göhring · Meisterbetrieb in Arnstadt">
+  <meta property="og:description" content="Meisterhafte Fahrzeuglackierung & Unfallinstandsetzung in Arnstadt – mit Sorglos-Service.">
+  <meta property="og:image" content="assets/img/og-cover.jpg">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+  <!-- Schriften: Fraunces (Headlines) + Inter (Text/UI) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+  <!-- ====================================================================
+       HEADER · transparent über Hero → bei Scroll dunkel + Blur
+       Off-Canvas-Navigation auf Mobile · persistenter Gold-CTA
+       ==================================================================== -->
+  <header class="site-header" data-header>
+    <div class="container site-header__inner">
+      <a class="brand" href="#start">Göhring<b>.</b></a>
+
+      <nav class="nav" aria-label="Hauptnavigation">
+        <ul class="nav__list" id="primary-menu" data-nav-menu>
+          <li class="nav__item"><a class="nav__link" href="#leistungen">Leistungen</a></li>
+          <li class="nav__item"><a class="nav__link" href="#ergebnisse">Arbeiten</a></li>
+          <li class="nav__item"><a class="nav__link" href="#ablauf">Ablauf</a></li>
+          <li class="nav__item"><a class="nav__link" href="#ueber-uns">Über uns</a></li>
+          <li class="nav__item"><a class="nav__link" href="#kontakt">Kontakt</a></li>
+        </ul>
+
+        <a class="btn btn--primary nav__cta" href="#kontakt">Kostenvoranschlag</a>
+
+        <button class="nav-toggle" type="button"
+                data-nav-toggle
+                aria-expanded="false"
+                aria-controls="primary-menu"
+                aria-label="Menü öffnen">
+          <span class="nav-toggle__bars" aria-hidden="true"></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Scrim hinter dem Off-Canvas-Panel (nur Mobile) -->
+  <div class="nav-scrim" data-nav-scrim aria-hidden="true"></div>
+
+  <main id="main">
+
+    <!-- ==================================================================
+         1 · HERO — ein Bild, ein Versprechen, ein dominanter CTA
+         (trägt die einzige <h1> der Seite)
+         ================================================================== -->
+    <section class="hero" id="start">
+      <div class="container hero__inner">
+        <p class="eyebrow hero__eyebrow">Lackier-Meisterbetrieb · Arnstadt / Thüringen</p>
+        <h1 class="hero__title">Ihr Fahrzeug verdient <em>Meisterhand</em>.</h1>
+        <p class="hero__lead">
+          Wir lackieren, richten Unfallschäden und übernehmen den Papierkram —
+          Sie lehnen sich einfach zurück.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary btn--lg" href="#kontakt">Kostenvoranschlag anfragen</a>
+          <a class="hero__tel" href="tel:+493628641510">
+            <svg class="hero__tel-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path fill="currentColor" d="M6.6 10.8a15.6 15.6 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24c1.12.37 2.33.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.27.2 2.48.57 3.6a1 1 0 0 1-.24 1z"/>
+            </svg>
+            03628 – 64 15 10
+          </a>
+        </div>
+        <p class="hero__meta">4,8★ · Meisterbetrieb · Sorglos-Service</p>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         2 · TRUST-LEISTE — 4,8★/32, Meisterbetrieb, Jahre, Region
+         ================================================================== -->
+    <section class="section section--surface" id="vertrauen" aria-labelledby="vertrauen-title">
+      <div class="container reveal">
+        <h2 id="vertrauen-title" class="visually-hidden">Vertrauen auf einen Blick</h2>
+        <div class="trust-bar">
+          <p class="trust-bar__item">
+            <span class="trust-bar__num">4,8★</span>
+            <span class="trust-bar__label">aus 32 Bewertungen</span>
+          </p>
+          <p class="trust-bar__item">
+            <span class="trust-bar__num">Meister</span>
+            <span class="trust-bar__label">betrieb · Kfz-Meister &amp; Lackierspezialisten</span>
+          </p>
+          <p class="trust-bar__item">
+            <span class="trust-bar__num">Arnstadt</span>
+            <span class="trust-bar__label">Ilm-Kreis · Thüringen</span>
+          </p>
+          <!-- PLATZHALTER · Phase 3: Jahre am Markt, Garantie, Zertifikate (nur real Vorhandenes) -->
+        </div>
+        <p class="placeholder-note">Weitere Vertrauenssignale (Jahre, Garantie, Gütesiegel) nach Bestätigung durch den Betrieb.</p>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         3 · LEISTUNGEN — als Nutzen, nicht als Liste
+         ================================================================== -->
+    <section class="section" id="leistungen" aria-labelledby="leistungen-title">
+      <div class="container reveal">
+        <div class="section__head">
+          <p class="eyebrow">Leistungen</p>
+          <h2 id="leistungen-title">Was wir für Ihr Fahrzeug tun</h2>
+        </div>
+        <!-- PLATZHALTER · Phase 4: Kern-Leistungen als Nutzen-Blöcke
+             (Lackierung · Unfall/Karosserie · Smart Repair) + Sekundär
+             (Autoglas · Inspektion · Reifen · TÜV/HU · Scheinwerfer-Aufbereitung) -->
+        <p class="placeholder-note">Leistungsblöcke folgen in Phase 4 (Kern + Sekundärleistungen als nutzenorientierte Karten).</p>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         4 · ERGEBNISSE — draggable Vorher/Nachher-Slider + Projektgalerie
+         ================================================================== -->
+    <section class="section section--surface" id="ergebnisse" aria-labelledby="ergebnisse-title">
+      <div class="container reveal">
+        <div class="section__head">
+          <p class="eyebrow">Vorher / Nachher</p>
+          <h2 id="ergebnisse-title">Das Ergebnis spricht für sich</h2>
+        </div>
+        <!-- PLATZHALTER · Phase 5: draggable Before/After-Slider (Tastatur-bedienbar)
+             + Projektgalerie mit benannten Aushängeschild-Fahrzeugen + Lightbox, lazy-load -->
+        <p class="placeholder-note">Vorher/Nachher-Slider und Projektgalerie folgen in Phase 5 (echte Fahrzeugfotos erforderlich).</p>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         5 · ABLAUF — "So läuft Ihr Auftrag" (Sorglos-Service)
+         ================================================================== -->
+    <section class="section" id="ablauf" aria-labelledby="ablauf-title">
+      <div class="container reveal">
+        <div class="section__head">
+          <p class="eyebrow">Sorglos-Service</p>
+          <h2 id="ablauf-title">So läuft Ihr Auftrag</h2>
+        </div>
+        <!-- PLATZHALTER · Phase 6: 3–4 Schritte (Anfrage → KVA/Begutachtung → Lackierung → Abholung)
+             + Versprechen: Versicherungsabwicklung, Ersatzwagen, flexible/24h-Abgabe, Garantie -->
+        <p class="placeholder-note">Prozess-Schritte und Versicherungs-/Ersatzwagen-Versprechen folgen in Phase 6.</p>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         6 · ÜBER UNS / TEAM — Gesichter, Werkstatt, Meisterbrief, Geschichte
+         ================================================================== -->
+    <section class="section section--surface" id="ueber-uns" aria-labelledby="ueber-uns-title">
+      <div class="container reveal">
+        <div class="section__head">
+          <p class="eyebrow">Über uns</p>
+          <h2 id="ueber-uns-title">Menschen, die ihr Handwerk lieben</h2>
+        </div>
+        <!-- PLATZHALTER · Phase 7: Text + Team-/Werkstattbilder (alt-Texte!) + Meisterbrief + Geschichte -->
+        <p class="placeholder-note">Team-Vorstellung, Werkstattbilder und Geschichte folgen in Phase 7.</p>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         7 · KUNDENSTIMMEN — echte Bewertungen / Zitate
+         ================================================================== -->
+    <section class="section" id="stimmen" aria-labelledby="stimmen-title">
+      <div class="container reveal">
+        <div class="section__head">
+          <p class="eyebrow">Kundenstimmen</p>
+          <h2 id="stimmen-title">Was Kunden über uns sagen</h2>
+        </div>
+        <!-- PLATZHALTER · Phase 8: mind. 3 echte, freigegebene Bewertungen
+             (inkl. belegtes Zitat zur Scheinwerfer-Aufbereitung) -->
+        <p class="placeholder-note">Echte Kundenstimmen folgen in Phase 8 (Freigaben durch den Betrieb erforderlich).</p>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         8 · KONTAKT / CONVERSION — Anfrageformular, Karte, Zeiten, Klick-Telefon
+         ================================================================== -->
+    <section class="section section--surface" id="kontakt" aria-labelledby="kontakt-title">
+      <div class="container reveal">
+        <div class="section__head">
+          <p class="eyebrow">Kontakt</p>
+          <h2 id="kontakt-title">Kostenvoranschlag anfragen — kostenlos &amp; unverbindlich</h2>
+        </div>
+        <!-- PLATZHALTER · Phase 9: Anfrageformular (Name, Kontakt, Fahrzeug, Schadensbeschreibung,
+             Schadensfoto-Hinweis) mit Validierung + dokumentiertem Versand-Anschlusspunkt,
+             Karte, Öffnungszeiten, Klick-Telefon -->
+        <p class="placeholder-note">Anfrageformular, Karte und Öffnungszeiten folgen in Phase 9.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====================================================================
+       FOOTER · Kontakt, Navigation, Recht
+       ==================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <p class="footer__brand">Göhring<b>.</b></p>
+          <p class="footer__tagline">Auto-Lackiererei Göhring GmbH — Meisterbetrieb für Lackierung, Karosserie und Smart Repair in Arnstadt.</p>
+        </div>
+
+        <div>
+          <p class="footer__title">Kontakt</p>
+          <ul class="footer__list">
+            <li>August-Brömel-Straße 3<br>99310 Arnstadt</li>
+            <li><a href="tel:+493628641510">03628 – 64 15 10</a></li>
+            <li><a href="mailto:lack-goehring@gmx.de">lack-goehring@gmx.de</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer__title">Seite</p>
+          <ul class="footer__list">
+            <li><a href="#leistungen">Leistungen</a></li>
+            <li><a href="#ergebnisse">Ergebnisse</a></li>
+            <li><a href="#ablauf">Ablauf</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© 2026 Auto-Lackiererei Göhring GmbH</p>
+        <nav class="footer__legal" aria-label="Rechtliches">
+          <a href="impressum.html">Impressum</a>
+          <a href="datenschutz.html">Datenschutz</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====================================================================
+       Strukturierte Daten · LocalBusiness / AutoBodyShop
+       Hinweis: Öffnungszeiten je nach Verzeichnis widersprüchlich
+       (Mo–Do 6:30 vs. 7:00) → vor Veröffentlichung beim Betrieb bestätigen.
+       ==================================================================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoBodyShop",
+    "name": "Auto-Lackiererei Göhring GmbH",
+    "image": "https://www.lack-goehring.de/assets/img/og-cover.jpg",
+    "telephone": "+493628641510",
+    "email": "lack-goehring@gmx.de",
+    "url": "https://www.lack-goehring.de/",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "August-Brömel-Straße 3",
+      "postalCode": "99310",
+      "addressLocality": "Arnstadt",
+      "addressRegion": "Thüringen",
+      "addressCountry": "DE"
+    },
+    "areaServed": ["Arnstadt", "Ilm-Kreis", "Thüringen"],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "32"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "07:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "07:00", "closes": "14:00" }
+    ]
+  }
+  </script>
+
+</body>
+</html>

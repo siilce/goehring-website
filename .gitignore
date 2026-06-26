@@ -1,0 +1,17 @@
+# Abhängigkeiten (werden bei Bedarf mit `npm install` wiederhergestellt)
+node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Betriebssystem- / Editor-Müll
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Lokale, gerätespezifische Claude-Einstellungen (launch.json bleibt im Repo)
+.claude/settings.local.json
+
+# Temporäre Dateien
+*.tmp
