@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Göhring · Trust-Badge als PNG exportieren</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap');
+    :root { color-scheme: dark; }
+    body {
+      margin: 0; min-height: 100vh; padding: 32px 20px;
+      background: #0E0F11; color: #F2F3F4;
+      font-family: "Inter", system-ui, sans-serif;
+      display: grid; justify-items: center; align-content: start; gap: 24px;
+    }
+    .frame { width: min(540px, 92vw); }
+    .frame svg { width: 100%; height: auto; display: block; border: 1px solid #2A2E33; border-radius: 8px; }
+    .btn {
+      background: #C9A24B; color: #0E0F11; border: 0; border-radius: 6px;
+      padding: 14px 28px; font: 600 16px "Inter", sans-serif; cursor: pointer;
+    }
+    .btn:hover { background: #DBB869; }
+    .hint { color: #A7ADB4; font-size: 14px; max-width: 540px; text-align: center; line-height: 1.6; }
+    a { color: #C9A24B; }
+  </style>
+</head>
+<body>
+  <div class="frame" id="frame">
+    <svg viewBox="0 0 1080 1080" width="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="ttl desc">
+      <title id="ttl">Vertrauens-Badge: 4,8 Sterne aus 32 Bewertungen</title>
+      <desc id="desc">Auto-Lackiererei Göhring — Meisterbetrieb aus Arnstadt, alle Marken und Fahrzeugtypen, Garantie auf Lackierungen.</desc>
+      <defs>
+        <style>
+          @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;family=Inter:wght@400;500;600;700&amp;display=swap');
+          text{font-family:'Inter',system-ui,'Segoe UI',Arial,sans-serif;}
+          .serif{font-family:'Fraunces',Georgia,'Times New Roman',serif;}
+        </style>
+        <radialGradient id="glow" cx="50%" cy="24%" r="60%">
+          <stop offset="0" stop-color="#C9A24B" stop-opacity="0.20"/>
+          <stop offset="55%" stop-color="#C9A24B" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="hair" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#C9A24B" stop-opacity="0"/>
+          <stop offset="0.5" stop-color="#C9A24B" stop-opacity="0.85"/>
+          <stop offset="1" stop-color="#C9A24B" stop-opacity="0"/>
+        </linearGradient>
+        <g id="star"><polygon points="0,-22 5.17,-7.12 20.92,-6.80 8.37,2.72 12.93,17.80 0,8.80 -12.93,17.80 -8.37,2.72 -20.92,-6.80 -5.17,-7.12" fill="#DBB869"/></g>
+      </defs>
+      <rect x="0" y="0" width="1080" height="1080" fill="#0E0F11"/>
+      <rect x="0" y="0" width="1080" height="1080" fill="url(#glow)"/>
+      <rect x="40" y="40" width="1000" height="1000" rx="14" fill="none" stroke="#2A2E33" stroke-width="1.5"/>
+      <text x="540" y="182" text-anchor="middle" fill="#C9A24B" font-size="22" font-weight="600" letter-spacing="7">AUTOLACKIEREREI · MEISTERBETRIEB</text>
+      <text x="540" y="256" text-anchor="middle" class="serif" fill="#F2F3F4" font-size="74" font-weight="600">GÖHRING<tspan fill="#C9A24B">.</tspan></text>
+      <rect x="110" y="372" width="860" height="346" rx="4" fill="#16181B" fill-opacity="0.55"/>
+      <rect x="160" y="372" width="760" height="2" fill="url(#hair)"/>
+      <rect x="160" y="716" width="760" height="2" fill="url(#hair)"/>
+      <use href="#star" transform="translate(428,460)"/>
+      <use href="#star" transform="translate(484,460)"/>
+      <use href="#star" transform="translate(540,460)"/>
+      <use href="#star" transform="translate(596,460)"/>
+      <use href="#star" transform="translate(652,460)"/>
+      <text x="540" y="524" text-anchor="middle" fill="#A7ADB4" font-size="27"><tspan class="serif" fill="#DBB869" font-size="34" font-weight="700">4,8</tspan><tspan> / 5&#160;&#160;·&#160;&#160;32 Bewertungen</tspan></text>
+      <rect x="490" y="556" width="100" height="2" rx="1" fill="#C9A24B" fill-opacity="0.4"/>
+      <text x="540" y="612" text-anchor="middle" fill="#E7E9EB" font-size="26" font-weight="500">Meisterbetrieb aus Arnstadt<tspan fill="#C9A24B" font-weight="700">&#160;&#160;•&#160;&#160;</tspan>alle Marken &amp; Fahrzeugtypen</text>
+      <text x="540" y="656" text-anchor="middle" fill="#E7E9EB" font-size="26" font-weight="500">Garantie auf Lackierungen</text>
+      <rect x="300" y="800" width="480" height="62" rx="31" fill="none" stroke="#C9A24B" stroke-width="1.6"/>
+      <text x="540" y="839" text-anchor="middle" fill="#DBB869" font-size="26" font-weight="600">Kostenvoranschlag anfragen</text>
+      <text x="540" y="918" text-anchor="middle" fill="#A7ADB4" font-size="23" letter-spacing="1">lack-goehring.de&#160;&#160;·&#160;&#160;03628 – 64 15 10</text>
+    </svg>
+  </div>
+
+  <button class="btn" id="dl" type="button">PNG herunterladen (1080×1080)</button>
+  <p class="hint">
+    Tipp: Die Vorschau oben nutzt die echte Fraunces-Schrift. Der PNG-Export verwendet eine
+    serifenbetonte System-Schrift als Ersatz (technisch bedingt). Für pixelgenaue Fraunces:
+    diese Seite im Browser per Screenshot aufnehmen oder die
+    <a href="trust-badge-1080.svg">SVG-Datei</a> in Canva/Figma exportieren.
+  </p>
+
+  <script>
+    document.getElementById("dl").addEventListener("click", function () {
+      var src = document.querySelector("#frame svg");
+      var clone = src.cloneNode(true);
+      var st = clone.querySelector("style");
+      if (st) st.remove(); // externe @import-Schrift entfernen -> Canvas bleibt exportierbar
+      clone.setAttribute("width", "1080");
+      clone.setAttribute("height", "1080");
+      var xml = new XMLSerializer().serializeToString(clone);
+      var url = "data:image/svg+xml;base64," + window.btoa(unescape(encodeURIComponent(xml)));
+      var img = new Image();
+      img.onload = function () {
+        var c = document.createElement("canvas");
+        c.width = 1080; c.height = 1080;
+        var ctx = c.getContext("2d");
+        ctx.drawImage(img, 0, 0, 1080, 1080);
+        c.toBlob(function (blob) {
+          var a = document.createElement("a");
+          a.href = URL.createObjectURL(blob);
+          a.download = "goehring-trust-badge-1080.png";
+          a.click();
+          URL.revokeObjectURL(a.href);
+        }, "image/png");
+      };
+      img.src = url;
+    });
+  </script>
+</body>
+</html>

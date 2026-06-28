@@ -19,9 +19,15 @@
 - [x] Progressive Enhancement: `js`-Klasse, Reveals nie dauerhaft versteckt
 - [x] Verifiziert bei 375/1280, kein Horizontal-Overflow, A11y-Zustände geprüft (lokaler Static-Server)
 
+## Phase 3 — Trust-Leiste  ✅ ERLEDIGT
+- [x] Responsive Trust-Bar (#vertrauen): 4,8★/32, Meisterbetrieb, Alle Marken, Garantie
+- [x] Einzeilige Reihe mit Gold-Sternen + Haarlinien-Trennern auf Desktop
+- [x] Saubere Spalten-Stapelung mit waagerechten Trennern auf Mobil (verifiziert 375/1000)
+- [x] Instagram-Trust-Badge 1080×1080: `assets/social/trust-badge-1080.svg` + `export.html` (PNG-Download)
+
 ## Nächste Phasen (Inhalte erst, wenn echte Fotos/Fakten vorliegen)
 - [ ] Echtes Hero-Foto einsetzen: `.hero { --hero-img: url('assets/img/hero.jpg'); }`
-- [ ] Phase 3 — Trust-Leiste (Jahre, Garantie, Gütesiegel)
+- [ ] Garantie-Dauer & Gütesiegel in der Trust-Leiste ergänzen (sobald bestätigt)
 - [ ] Phase 4 — Leistungen als Nutzen-Blöcke
 - [ ] Phase 5 — Vorher/Nachher-Slider (draggable) + Galerie + Lightbox
 - [ ] Phase 6 — Sorglos-Ablauf (Schritte + Versicherungs-/Ersatzwagen-Versprechen)

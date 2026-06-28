@@ -553,17 +553,40 @@ body.nav-open { overflow: hidden; }   /* Scroll-Lock bei offenem Off-Canvas */
    ========================================================================== */
 .trust-bar {
   display: flex; flex-wrap: wrap;
-  gap: var(--sp-4) var(--sp-6);
-  align-items: center;
+  justify-content: center; align-items: center;
+  gap: var(--sp-3) 0;
+  list-style: none; margin: 0; padding: 0;
 }
-.trust-bar__item { display: flex; align-items: baseline; gap: var(--sp-2); }
+.trust-bar__item {
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  text-align: center; gap: var(--sp-1);
+  padding-inline: clamp(var(--sp-4), 4vw, var(--sp-7));
+  position: relative;
+}
+/* feine Trennlinie zwischen den Items (nur Desktop-Reihe) */
+.trust-bar__item + .trust-bar__item::before {
+  content: ""; position: absolute; left: 0; top: 50%;
+  transform: translateY(-50%);
+  width: 1px; height: 40px; background: var(--c-line);
+}
 .trust-bar__num {
   font-family: var(--ff-display);
   font-weight: var(--fw-semibold);
   font-size: var(--fs-h3);
+  line-height: 1;
   color: var(--c-accent);
 }
 .trust-bar__label { color: var(--c-text-muted); font-size: var(--fs-small); }
+.trust-bar__stars { color: var(--c-accent); letter-spacing: 1px; }
+
+/* Mobil: sauber gestapelt mit waagerechten Trennlinien */
+@media (max-width: 768px) {
+  .trust-bar { flex-direction: column; gap: 0; }
+  .trust-bar__item { padding-inline: 0; padding-block: var(--sp-4); width: min(340px, 82%); }
+  .trust-bar__item + .trust-bar__item::before { display: none; }
+  .trust-bar__item + .trust-bar__item { border-top: 1px solid var(--c-line); }
+}
 
 /* ============================================================================
    9 · SCROLL-REVEAL  (JS fügt .is-visible hinzu — einmalig)
